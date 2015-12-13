@@ -1,0 +1,19 @@
+{
+  "budget_items": [
+    {
+      "id": "1",
+      "item_name": "Fuel",
+      "amount": "150"
+    },
+    {
+      "id": "2",
+      "item_name": "Rent",
+      "amount": "150"
+    },
+    {
+      "id": "3",
+      "item_name": "Food",
+      "amount": "150"
+    }
+  ]
+}

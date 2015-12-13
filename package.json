@@ -9,6 +9,8 @@
   "author": "Christopher Hutchinson",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "lowdb": "^0.10.3"
   }
 }

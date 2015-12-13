@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Express Budget - #{title}
+  each budget_item in budget_items
+    a(href="/budget_items/" + budget_item.id)
+      p #{budget_item.item_name}
