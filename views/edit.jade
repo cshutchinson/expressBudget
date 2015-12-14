@@ -1,0 +1,11 @@
+extends layout
+block content
+  h1 Budget Items - Editing: #{budget_item.item_name}
+  h2 Item ID: #{budget_item.id}
+  form
+    label(for="item_name") Budget Item:
+    input(type="text" id="item_name" name="item_name" value=budget_item.item_name)
+    label(for="amount") Amount:
+    input(type="text" id="amount" name="amount" value=budget_item.amount)
+    button.editButton(type="button") Edit
+  a(href="/") Home

@@ -23,6 +23,16 @@ app.get('/budget_items/:id', function(req,res){
   res.render('detail', {budget_item: budgetItem});
 })
 
+// ----Update---- //
+app.get('/budget_items/:id/edit', function(req,res){
+  var budgetItem = db('budget_items').find({id: req.params.id});
+  res.render('edit', {budget_item: budgetItem});
+})
+
+app.put('/budget_items/:id', function(req,res){
+  
+})
+
 
 
 app.listen(3000, function(){

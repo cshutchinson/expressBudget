@@ -1,4 +1,8 @@
 extends layout
 block content
-  h1 #{budget_item.id}
-  h2 #{budget_item.item_name} 
+  h1 Budget Items 
+  h2 Item ID: #{budget_item.id}
+  h2 Budget Item: #{budget_item.item_name}
+  h2 Amount: $#{budget_item.amount}.00
+  a(href="/budget_items/" + budget_item.id + '/edit')
+    h3 Edit: #{budget_item.item_name}
